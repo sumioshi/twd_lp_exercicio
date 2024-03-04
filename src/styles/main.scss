@@ -1,0 +1,105 @@
+@use 'variaveis';
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; 
+}
+
+body {
+    font-family: variaveis.$fonte-principal;
+    background-color: variaveis.$cor-secundaria;
+    color: variaveis.$cor-texto;
+    // comentario
+}
+
+.header {
+    background-color: variaveis.$cor-primaria;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.header:hover {
+    background-color: darken(variaveis.$cor-primaria, 10%); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.logo img {
+    width: 150px;
+    transition: transform 0.3s ease; 
+}
+
+.logo img:hover {
+    transform: scale(1.1); 
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: variaveis.$cor-texto;
+    transition: color 0.3s ease; 
+}
+
+.nav ul li a:hover {
+    color: darken(variaveis.$cor-texto, 20%); 
+}
+
+.main-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.banner img {
+    max-width: 50%;
+    border: 1px solid variaveis.$cor-primaria; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.banner img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.content {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: variaveis.$cor-primaria;
+    color: variaveis.$cor-texto;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.btn:hover {
+    background-color: darken(variaveis.$cor-primaria, 10%);
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.footer {
+    background-color: variaveis.$cor-primaria;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); 
+}
